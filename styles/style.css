@@ -251,6 +251,7 @@ a:link {
 
 .content__video-card-description-container {
   color: #fff;
+  margin-left: 2px;
 }
 
 .content__video-card-title {
@@ -292,7 +293,6 @@ a:link {
 }
 
 .content__video-card-thumbnail {
-  text-align: center;
   padding: 2px 2px 2px 0px;
   width: 194px;
 }
