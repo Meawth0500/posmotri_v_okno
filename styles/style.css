@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1,
@@ -57,7 +60,7 @@ ol {
   outline: 1px solid #fff;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
@@ -66,17 +69,18 @@ button:focus {
   outline-offset: 2px;
 }
 
-button:hover {
+.button:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-button:active {
+.button:active {
   background-color: #545050;
 }
 
 .content__card-link {
   display: block;
+  text-decoration: none;
   
 }
 
@@ -111,8 +115,7 @@ button:active {
 
 .content {
  display: flex;
- padding: 133px 30px;
- font-family: Oswald;
+ font-family: 'Oswald', sans-serif;
 }
 
 .result{
@@ -121,13 +124,15 @@ button:active {
 .result__video {
   width: 711px;
   height: 386px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
   display: flex;
   justify-content:space-between;
   margin-top: 10px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -138,15 +143,16 @@ button:active {
 }
 
 .search-form__textfield {
-  border-block-start: 1px solid rgb(255, 255, 255);
-  border-block-end: 1px solid rgb(255, 255, 255);
+  appearance: none;
+  border-block-start: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
   border-left: none;
   border-right: none;
   background-color: transparent;
   width: 225px;
   height: 27px;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -160,7 +166,7 @@ button:active {
 
 .search-form__fieldset-title {
   margin-bottom: 5px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -197,7 +203,7 @@ button:active {
   cursor: pointer;
 }
 
-input[type='checkbox']:checked + span::before {
+input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   content: '';
   width: 15px;
   height: 15px;
@@ -208,12 +214,12 @@ input[type='checkbox']:checked + span::before {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
+  min-height: 34px;
   margin: 20px 0 0 0;
   background: none;
   border: 1px solid rgb(255, 255, 255);
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -245,10 +251,6 @@ input[type='checkbox']:checked + span::before {
   height: 100%;
 }
 
-a:link {
-  text-decoration: none
-}
-
 .content__video-card-description-container {
   color: #fff;
   margin-left: 2px;
@@ -257,7 +259,7 @@ a:link {
 .content__video-card-title {
   margin-top: 2px;
   text-transform: uppercase;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 100%;
@@ -265,10 +267,9 @@ a:link {
 
 .content__video-card-description {
   width: 200px;
-  height: 65px;
   margin-top: 4px;
   text-transform: capitalize;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -306,11 +307,10 @@ a:link {
   margin-bottom: 3px;
   display: block;
   width: 390px;
-  height: 34px;
   background: none;
   border: 1px solid rgb(255, 255, 255);
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
