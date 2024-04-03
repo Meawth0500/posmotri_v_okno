@@ -247,7 +247,7 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
   overflow: unset;
   padding: 2px;
   overflow-y: scroll;
-  height: 298px;
+  height: 300px;
 }
 
 .preloader-template {
@@ -307,10 +307,10 @@ input[type='checkbox']:checked + .search-form__pseudo-checkbox::before {
 }
 
 .more-button {
+  width: 399px;
+  min-height: 34px;
   margin: 0 auto;
-  margin-bottom: 3px;
   display: block;
-  width: 390px;
   background: none;
   border: 1px solid rgb(255, 255, 255);
   color: #fff;
